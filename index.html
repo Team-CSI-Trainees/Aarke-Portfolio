@@ -1,65 +1,261 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Aarke Tripathi</title>
-    <link rel="stylesheet" href="css_part.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aarke Tripathi - Portfolio</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/education.css">
+    <link rel="stylesheet" href="css/experience.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/contact.css">
 </head>
-<div id="whole">
 <body>
-    <nav id="navbar", class="top">
-        <ul>
-            <li><a href="#pi">Personal Information</a></li>
-            <li><a href="#me">About me</a></li>
-            <li><a href="#skill">Skillset</a></li>
-            <li><a href="#hobby">Hobbies</a></li>
-            <li><a href="#contact_me">Contact me</a></li>
-        </ul>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                Aarke<span>Tripathi</span>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#education">Education</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
     </nav>
-    <p><font size="8" color="rebeccapurple">&nbsp;&nbsp;&nbsp;&nbsp;Aarke</font> <font size="8" color="white">here</font>.</p>
-    <img src="photo_2022-10-02_15-01-33.jpg" alt="My Pic" height="400px">
-    <p class="toptext"><font size="8" color="rebeccapurple">Welcome,</font><br><font size="6" color="white">how may i help?</font></p>
-    <div id="pi">
-    <h2>Personal Info</h2><br><BR>
-    <ul><li><strong>Name :</strong>  Aarke Tripathi </li><br><br>
-        <li><strong>DOB :</strong>  02/08/2003</li><br><br>
-        <li><strong>Address :</strong>  Shiv. 15/103 2-K-3-C-1-M, Bharlai, Shivpur, Varanasi.</li><br><br>
-        <li><strong>Profession :</strong>Student</li><br><br>
-        <li><strong>Contact No. :</strong>8738946019</li><br><br>
-        <li><strong>E-mail address :</strong><E-mail>aarke2002tripathi@gmail.com</E-mail></li>
-    </ul>
-    </div>
-    <div id="me">
-        <h2>About me</h2><br><br><br>
-        <p>I am a student at <a href="https://www.akgec.ac.in/">Ajay Kumar Garg Engineering College</a> and currently a trainee under the <a href="https://www.csiakgec.in/index">Computer Society of India</a>. I am pursuing B.Tech. degree in CSE(AI-ML) branch. My main aim is to become a <strong>Machine Learner</strong> and i have taken some initiative towards this goal. I have gained command over <strong>Python</strong>, a programming language extremely efficient in the field of Machine learning and am currently leaning the basic concepts of ML.</p>
-    </div>
-    <div id="skill">
-    <h2>Skillset</h2><br><br><br>
-    <ul><li><h3>Expertise in Python Programming Language</h3><br>I have strong command on the syntax and worked on various libraries in the language such as Numpy, Pandas, Tkinter, etc. I have even made projects such as working <a href="https://github.com/AarkeTripathi/Python_GUI">GUI register application</a>.</li><br><br>
-        <li><h3>Intermediate command of C Programming Language</h3><br>I have command over C language syntax and worked on some mini projects.</li><br><br>
-        <li><h3>Machine Learner</h3><br>I have keen interest in Machine Learning, especially, <em>unsupervised</em> ML.</li><br><br>
-        <li><h3>100 metres Sprinter</h3><br>I was in the athletics sport team of AKGEC with 100 m Sprinting as my specialization.</li><br><br>
-    </ul>
-    </div> 
-    <div id="hobby">
-    <h2>Hobbies</h2><br><br><br>
-    <ul>
-        <li>Playing Chess</li>
-        <li>Sprinting</li>
-        <li>Competitive Programming</li>
-        <li>Dancing</li>
-    </ul>
-    </div>
-    <div id="contact_me">
-    <form action="C:\Users\AARKE\Desktop\Git2\contact_form.csv">
-        <h2>Contact Me</h2>
-        <center>
-        <input type="text" class="name" placeholder="Name"><br>
-        <input type="email" class="email" placeholder="E-mail"><br>
-        <input type="number" class="contact" placeholder="Contact No."><br>
-        <textarea class="desc" placeholder="Description"></textarea><br>
-        <input type="submit" value="Submit">
-        </center>
-    </form>
-    </div><br><br>
+
+    <main class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Hi, It's <span>Aarke</span></h1>
+                <h2>I'm a <span>Tech Enthusiast</span></h2>
+                <p>
+                    Tech enthusiast pursuing a Bachelor of Technology in Computer Science
+                    and Engineering (AIML) at Ajay Kumar Garg Engineering College, Ghaziabad.
+                    My journey is driven by a passion for Machine Learning, Data Science,
+                    and Backend Development, with expertise in Python, C++, and SQL.
+                </p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/aarke-tripathi/" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <svg viewBox="0 0 24 24" class="social-icon">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect width="4" height="12" x="2" y="9"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/AarkeTripathi" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <svg viewBox="0 0 24 24" class="social-icon">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/aarketripathi" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <svg viewBox="0 0 24 24" class="social-icon">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                        </svg>
+                    </a>
+                </div>
+                <a href="#contact" class="cta-button">Contact Me</a>
+            </div>
+            <div class="hero-image">
+                <img src="img.jpg" alt="Aarke Tripathi">
+            </div>
+        </div>
+    </main>
+
+    <section id="education" class="education">
+        <h2 class="section-heading">Education</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2024</div>
+                <div class="timeline-content">
+                    <h3>Internship</h3>
+                    <p>Machine Learning Intern at QuazaAI, working on gesture detection systems and contributing to innovative AI solutions.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2023</div>
+                <div class="timeline-content">
+                    <h3>University</h3>
+                    <p>Pursuing B.Tech in Computer Science (AIML) at Ajay Kumar Garg Engineering College, focusing on machine learning and data science.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2022</div>
+                <div class="timeline-content">
+                    <h3>Intermediate</h3>
+                    <p>Completed intermediate education with focus on mathematics and computer science, laying the foundation for technical expertise.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2021</div>
+                <div class="timeline-content">
+                    <h3>High School</h3>
+                    <p>Graduated high school with distinction, developing strong analytical and problem-solving skills.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+        <h2 class="section-heading">Experience</h2>
+        <div class="experience-container">
+            <div class="experience-card">
+                <h3>CSI-AKGEC Student Chapter</h3>
+                <div class="experience-title">3rd Year Coordinator</div>
+                <div class="experience-period">Dec 2022 - Present</div>
+                <ul class="experience-list">
+                    <li>Senior Coordinator: Collaborated with team to organise various events such as Recruitment drive, Hackathon, Ideathon, Workshops, etc</li>
+                    <li>ML Lead: Completed advanced Machine Learning courses and executed five data-driven projects within the society, contributing to a 30% knowledge enhancement among participants</li>
+                </ul>
+            </div>
+            <div class="experience-card">
+                <h3>QuazaAI</h3>
+                <div class="experience-title">Computer Vision Intern</div>
+                <div class="experience-period">Jan 2024 - July 2024</div>
+                <ul class="experience-list">
+                    <li>Created and managed models and programs for gesture detection</li>
+                    <li>Data Warehouse Team Lead: Led a team of 3 juniors to manage a 1TB data warehouse, optimizing data pipelines by 20% and ensuring data accuracy</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2 class="section-heading">Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Tree enumeration Classification</h3>
+                    <span class="project-status">Ongoing</span>
+                </div>
+                <p class="project-description">
+                    Developed a machine learning model to count trees in forests using satellite and drone imagery, leveraging the YOLO algorithm for object detection.
+                </p>
+                <div class="project-details">
+                    <div class="detail-group">
+                        <h4>Outcome</h4>
+                        <p>Achieved 85% accuracy in initial model testing with a plan to improve to 90% by optimizing the model's hyperparameters.</p>
+                    </div>
+                    <div class="detail-group">
+                        <h4>Tech Stack</h4>
+                        <div class="tech-stack">
+                            <span>YOLO</span>
+                            <span>PyTorch</span>
+                            <span>Django</span>
+                            <span>OpenCV</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Potato Plant Health Prediction</h3>
+                <p class="project-description">
+                    ML model utilizing computer vision to process images of potato plant leaves and CNN architecture to predict plant health status.
+                </p>
+                <div class="project-details">
+                    <div class="detail-group">
+                        <h4>Outcome</h4>
+                        <p>92% accuracy in classifying healthy vs. diseased plants, improving farm productivity.</p>
+                    </div>
+                    <div class="detail-group">
+                        <h4>Tech Stack</h4>
+                        <div class="tech-stack">
+                            <span>CNN</span>
+                            <span>TensorFlow</span>
+                            <span>FastAPI</span>
+                            <span>NumPy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Job Market Analysis - Uttarakhand</h3>
+                <p class="project-description">
+                    NLP-based analysis system for categorizing jobs and analyzing unemployment rates across Uttarakhand districts.
+                </p>
+                <div class="project-details">
+                    <div class="detail-group">
+                        <h4>Outcome</h4>
+                        <p>Optimized government job allocation by 15% through data-driven insights.</p>
+                    </div>
+                    <div class="detail-group">
+                        <h4>Tech Stack</h4>
+                        <div class="tech-stack">
+                            <span>OpenCV</span>
+                            <span>DeepFace</span>
+                            <span>NumPy</span>
+                            <span>NLP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 class="section-heading">Contact Me</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Get In Touch</h3>
+                <p>I'm always interested in hearing about new projects and opportunities.</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <svg viewBox="0 0 24 24" class="contact-icon">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <div>
+                            <span>Email</span>
+                            <a href="mailto:contact@example.com">contact@example.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <svg viewBox="0 0 24 24" class="contact-icon">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <div>
+                            <span>Location</span>
+                            <p>Ghaziabad, Uttar Pradesh</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
 </body>
-</div>
 </html>
